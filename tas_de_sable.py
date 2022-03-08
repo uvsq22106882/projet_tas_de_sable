@@ -1,25 +1,24 @@
-from tkinter import *
-
-
-sandpile_w= Tk()
-
-sandpile_w.title("Tas de sable")
-
-sandpile_w.geometry("600x600")
-
-
-monCanvas = Canvas(sandpile_w, width=500, height=500, bg='ivory')
-monCanvas.pack()
-monCanvas.place(x=50,y=50)
-
-def fun():  
-    messagebox.showinfo("Hello", "Red Button clicked")  
-
-
-b1 = Button(sandpile_w,text = "Red",command = fun,activeforeground = "red",activebackground = "pink",pady=10)  
-
-b1.pack(side = LEFT)  
-bouton = sandpile_w.Button (text = "zone de texte")
-
-sandpile_w.mainloop()
+import tkinter as tk
+import random as rd 
+HEIGHT = 500
+WIDTH = 500
+l1=[]
+l2=[]
+l3=[]
+def configuration():
+    global l1,l2,l3
+    l1=[rd.randint(0,9),rd.randint(0,9),rd.randint(0,9)]
+    l2=[rd.randint(0,9),rd.randint(0,9),rd.randint(0,9)]
+    l3=[rd.randint(0,9),rd.randint(0,9),rd.randint(0,9)] 
+    print(l1)
+    print(l2)
+    print(l3)
+    return 
+#utiliser le random pour créer 3 listes aleatoires 
+racine = tk.Tk() # Création de la fenêtre racine
+canvas = tk.Canvas(racine, bg="white", height=HEIGHT, width=WIDTH)
+canvas.grid()
+Bouton=tk.Button(racine, text="configuration aléatoire " , command=configuration , font=("Calibri","17"))
+Bouton.grid()
+racine.mainloop() # Lancement de la boucle principale
 
