@@ -15,7 +15,7 @@ def configuration():
     print(l3)
     return 
 
-singe
+
 racine = tk.Tk() # Création de la fenêtre racine
 canvas = tk.Canvas(racine, bg="white", height=HEIGHT, width=WIDTH)
 canvas.grid()
