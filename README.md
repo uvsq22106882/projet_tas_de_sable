@@ -5,6 +5,6 @@ projet tas de sable groupe 3 TD2 MIASHS
 # Boudinar Lounes 
 # Subramaniam Suyan
 # Kaouachi yota 
-# Charpentier Sulaymân
+# SAMBE MOMAR 
 # https://github.com/uvsq22106882/projet_tas_de_sable.git
 #########################################
